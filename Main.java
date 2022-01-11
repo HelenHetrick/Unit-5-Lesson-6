@@ -32,5 +32,33 @@ System.out.println(g);
 System.out.println("Are the books equal?"+b.equals(b2));
 System.out.println("Are the books equal?"+b.equals(g));
 
+
+//making some default books
+Book def1=new Book();
+Book def2=new Book();
+System.out.println("This is default book 1 "+def1);
+System.out.println("This is default book 2 "+def2);
+System.out.println("Are the default books equal? "+def1.equals(def2));
+
+
+//Create Library
+Library lib=new Library();
+System.out.println(lib);
+
+//adds books to our Library
+lib.addBooks(b);
+lib.addBooks(b2);
+lib.addBooks(g);
+lib.addBooks(def1);
+lib.addBooks(def2);
+lib.addBooks(b);
+lib.addBooks(b2);
+lib.addBooks(g);
+lib.addBooks(def1);
+lib.addBooks(def2);
+lib.addBooks(def2);
+
+System.out.println(lib);
+
   }
 }
