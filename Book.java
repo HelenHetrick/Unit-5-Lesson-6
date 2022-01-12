@@ -1,13 +1,13 @@
 public class Book
   
 {
-  //Fields/Instance Data
+  //Fields/instance data
   private String title;
   private String author;
   private int year;
   private int numPages;
   private boolean hardCover;
-
+  
   //Constructor
   public Book(String t, String a, int y, int n, boolean h)
   {
@@ -17,88 +17,69 @@ public class Book
     setNumPages(n);
     setHardCover(h);
   }
-  //overloading the Constructor
-public Book()
-{
-  this("none","unknown",1900,1,false);
-}
-
-
-
-  //Accessor Methods
-  public  String getTitle()
+  //overloading the constructor
+  public Book()
+  {
+    this("none","unknown",1900,1,false);
+  }
+  //accessor methods
+  public String getTitle()
   {
     return title;
   }
-
-  public  String getAuthor()
+  public String getAuthor()
   {
     return author;
   }
-
   public int getYear()
   {
     return year;
   }
-
   public int getNumPages()
   {
     return numPages;
   }
-  
-  public  boolean getHardCover()
+  public boolean getHardCover()
   {
     return hardCover;
   }
-  //Mutator Methods - setter Methods
-  public void setTitle(String s)
+  //Mutator methods
+  public void setTitle(String k)
   {
-    title=s;
+    title=k;
   }
-
-  public void setAuthor(String a)
+  public void setAuthor(String f)
   {
-    author=a;
+    author=f;
   }
-
   public void setYear(int y)
   {
     year=y;
   }
-
-  public void setNumPages(int n)
+  public void setNumPages(int s)
   {
-    numPages=n;
+    numPages=s;
   }
-
-  public void setHardCover(boolean h)
+  public void setHardCover(boolean o)
   {
-    hardCover=h;
+    hardCover=o;
   }
-
-//other Methods
-public boolean equals(Book b)
-{
-  if(this.getTitle().equals(b.getTitle()))
+ 
+  //Other methods
+  public boolean equals(Book b)
   {
+    if(this.getTitle().equals(b.getTitle()))
     return true;
-  
-  }
-  else
-  {
+    else
     return false;
   }
-}
-
-  //what prints for our object
+  //What prints for our object
   public String toString()
-  {
+    {
     String str="";
-    str="\nTitle: "+title+"\nAuthor: "+author+"\nYear Published: "+year;
-    str=str+"\nNumber of Pages: "+numPages+"\nHardCover: "+hardCover;
+    str="title: "+title +" \nauthor: "+author +"\nyear: "+ year;
+    str+= "\nnumPages: "+numPages + " \nhardCover: "+hardCover;
     return str;
-  }
-  
+    }
   
 }
-
